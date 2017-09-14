@@ -39,7 +39,7 @@ La consola funciona como cualquier editor de texto (bloc de notas, word, gmail, 
 
 
 ## Links
-- [Crear Usuario](https://help.github.com/articles/basic-writing-and-formatting-syntax/#links).
+- [Crear Usuario](https://onlineservices.immigration.govt.nz/Registration/default.aspx).
 - [Como acceder al formulario?](http://www.yomeanimoyvos.com/nueva-zelanda-la-guia-maestra).
 
 
