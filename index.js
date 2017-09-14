@@ -4,15 +4,15 @@ var $ = jQuery;
 var form1 = [
   {
     field:"ContentPlaceHolder1_personDetails_familyNameTextBox",
-    value:'mercado buberman' // Nombre (tal cual aparece en el pasaporte),
+    value:'Pepe Santos' // Nombre (tal cual aparece en el pasaporte),
   },
   {
     field:'ContentPlaceHolder1_personDetails_givenName1Textbox',
-    value:'alejandra', // Primer nombre
+    value:'Pepe', // Primer nombre
   },
   {
     field:'ContentPlaceHolder1_personDetails_givenName2Textbox',
-    value:'yael' // Segundo nombre
+    value:'Santos' // Segundo nombre
   },
   {
     field:'ContentPlaceHolder1_personDetails_genderDropDownList',
@@ -31,11 +31,11 @@ var form1 = [
   // Parte 2 - Lugar en el que reside
   {
     field:'ContentPlaceHolder1_addressContactDetails_address_streetNumberTextbox',
-    value:'10', // Numero de la calle ( Maxiomo 18 caracteres )
+    value:'80', // Numero de la calle ( Maxiomo 18 caracteres )
   },
   {
     field:'ContentPlaceHolder1_addressContactDetails_address_address1TextBox',
-    value:'norte', // Nombre de la calle
+    value:'sur', // Nombre de la calle
   },
   {
     field:'ContentPlaceHolder1_addressContactDetails_address_suburbTextBox',
@@ -70,11 +70,11 @@ var form1 = [
   },
   {
     field:'ContentPlaceHolder1_addressContactDetails_contactDetails_emailAddressTextBox',
-    value:'aleymbrosario@gmail.com', // Correo
+    value:'pepesantos@gmail.com', // Correo
   },
    {
     field:'ContentPlaceHolder1_addressContactDetails_contactDetails_phoneNumberMobileTextBox',
-    value:'+5219842367726', // Celular
+    value:'+5219922362026', // Celular
   },
    {
     field:'ContentPlaceHolder1_hasCreditCard_hasCreditCardDropDownlist',
@@ -87,11 +87,11 @@ var form1 = [
 form2 = [
   {
     field:'ContentPlaceHolder1_identification_passportNumberTextBox',
-    value:'AAB039599' // Pasaporte
+    value:'AAB032588' // Pasaporte
   },
   {
     field:'ContentPlaceHolder1_identification_confirmPassportNumberTextBox',
-    value:'AAB039599' // Pasaporte (confirmacion)
+    value:'AAB032588' // Pasaporte (confirmacion)
   },
   {
     field:'ContentPlaceHolder1_identification_passportExpiryDateDatePicker_DatePicker',
