@@ -146,44 +146,101 @@ form5 = [
 
 form6 = [
   {
-  	field:'ContentPlaceHolder1_offshoreDetails_commonWHSQuestions_previousWhsPermitVisaDropDownList', 
-  	value:'No',
-  	type:'select'
+    field:'ContentPlaceHolder1_offshoreDetails_commonWHSQuestions_previousWhsPermitVisaDropDownList', 
+    value:'No',
+    type:'select'
   },
   {
-  	field:'ContentPlaceHolder1_offshoreDetails_commonWHSQuestions_sufficientFundsHolidayDropDownList',
-  	value:'Yes',
-  	type:'select'
+    field:'ContentPlaceHolder1_offshoreDetails_commonWHSQuestions_sufficientFundsHolidayDropDownList',
+    value:'Yes',
+    type:'select'
 
   },
   {
-  	field:'ContentPlaceHolder1_offshoreDetails_intendedTravelDateDatePicker_DatePicker',
-  	 value:'10 April, 2018'
+    field:'ContentPlaceHolder1_offshoreDetails_intendedTravelDateDatePicker_DatePicker',
+     value:'10 April, 2018'
   },
   {
-  	field:'ContentPlaceHolder1_offshoreDetails_beenToNzDropDownList',
-  	 value:'No',
-  	 type:'select'
+    field:'ContentPlaceHolder1_offshoreDetails_beenToNzDropDownList',
+     value:'No',
+     type:'select'
   },
   {
-  	field:'ContentPlaceHolder1_offshoreDetails_requirementsQuestions_sufficientFundsOnwardTicketDropDownList',
-  	 value:'Yes',
-  	 type:'select'
+    field:'ContentPlaceHolder1_offshoreDetails_requirementsQuestions_sufficientFundsOnwardTicketDropDownList',
+     value:'Yes',
+     type:'select'
   },
   {
-  	field:'ContentPlaceHolder1_offshoreDetails_requirementsQuestions_readRequirementsDropDownList',
-  	 value:'Yes',
-  	 type:'select'
+    field:'ContentPlaceHolder1_offshoreDetails_requirementsQuestions_readRequirementsDropDownList',
+     value:'Yes',
+     type:'select'
   },
   {
-  	field:'ContentPlaceHolder1_offshoreDetails_lengthOfStay_lengthOfStayDropDownList',
-  	 value:'2', // Cantidad de meses (12 meses = 2, 23 meses = 3)
-  	 type:'select'
+    field:'ContentPlaceHolder1_offshoreDetails_lengthOfStay_lengthOfStayDropDownList',
+     value:'2', // Cantidad de meses (12 meses = 2, 23 meses = 3)
+     type:'select'
   },
-
-  
-
 ];
+
+
+var formSubmit = [
+    {
+      field:'ContentPlaceHolder1_falseStatementCheckBox',
+      type:'checkbox'
+    },
+    {
+      field:'ContentPlaceHolder1_notesCheckBox',
+      type:'checkbox'
+    },
+    {
+      field:'ContentPlaceHolder1_circumstancesCheckBox',
+      type:'checkbox'
+    },
+
+
+
+    {
+      field:'ContentPlaceHolder1_warrantsCheckBox',
+      type:'checkbox'
+    },
+    {
+      field:'ContentPlaceHolder1_informationCheckBox',
+      type:'checkbox'
+    },
+    {
+      field:'ContentPlaceHolder1_healthCheckBox',
+      type:'checkbox'
+    },
+    {
+      field:'ContentPlaceHolder1_adviceCheckBox',
+      type:'checkbox'
+    },
+    {
+      field:'ContentPlaceHolder1_registrationCheckBox',
+      type:'checkbox'
+    },
+    {
+      field:'ContentPlaceHolder1_entitlementCheckbox',
+      type:'checkbox'
+    },
+    {
+      field:'ContentPlaceHolder1_permitExpiryCheckBox',
+      type:'checkbox'
+    },
+    {
+      field:'ContentPlaceHolder1_medicalInsuranceCheckBox',
+      type:'checkbox'
+    }
+
+]
+
+
+
+
+
+
+
+
 
 
 
@@ -197,7 +254,11 @@ $.each( formAnswers, function(i,v){
      $("#"+field).val(value).change();
     console.log(value)
     console.log(field)
-  }else{
+  }else if( v.type == "checkbox"){
+    $('#'+field).attr('checked','checked')
+  }
+
+  else{
      $("#"+field).val(value).change();
   }
  })
@@ -208,3 +269,4 @@ load(form2)
 load(form4)
 load(form5)
 load(form6)
+load(formSubmit)
